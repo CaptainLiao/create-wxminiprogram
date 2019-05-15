@@ -22,7 +22,7 @@ export function request(options) {
     })
 }
 
-export function rowRequest(options) {
+function rowRequest(options) {
   return wx.requestAsync(options)
     .then(res => {
       let code = get(res, 'data.code')
