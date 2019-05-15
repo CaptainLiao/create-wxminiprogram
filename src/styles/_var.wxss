@@ -1,0 +1,15 @@
+page {
+  --red: #ed4014;
+  --orange: #ff9900;
+
+  --green: #257b54;
+  --darkgreen: #94c096;
+
+  --blue: #2d8cf0;
+
+  --gray: #b2b2b2;
+  --lightgray: #e0e0e0;
+  --darkgray: #808080;
+
+  --black: #383735;
+}

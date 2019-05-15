@@ -1,0 +1,14 @@
+<view class="tab-nav fx-row fx-m-between text-center text-26">
+  <view wx:for="{{tabBar}}" 
+    wx:key="{{item.value}}"
+    class="tab-nav-item {{currentIndex === index ? 'active' : ''}}"
+    style="{{tabStyle.item}}"
+    data-index="{{index}}"
+    bindtap="tapTabBar">
+    <view class="fx-col fx-m-center">
+      <image class="tab-icon" 
+        src="{{currentIndex === index ? item.selectedIconPath : item.iconPath}}" alt="" />
+      <view>{{item.text}}</view>
+    </view>
+  </view>
+</view>

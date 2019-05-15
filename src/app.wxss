@@ -1,0 +1,35 @@
+/**app.wxss**/
+
+@import "styles/index.wxss";
+
+/* 所有页面的样式 */
+page {
+  /* 行高1.4倍 */
+  line-height: 1.4;
+}
+
+/* 开发工具上输入框有点问题 */
+input {
+  position: relative;
+  z-index: 0;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 
+
+/* iPhone X或其他机型适配 */
+/* 因为不能用env(...)，所以必须知道每种机型的具体数值 */
+.a-fix-bottom.ipx {
+  border-bottom: 34px solid #f0f0f0;
+}
+.footer.ipx {
+  border-color: transparent;
+}
+

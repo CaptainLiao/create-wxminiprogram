@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "views/index/index",
+    "views/example/upload-file/index",
+    "views/example/qr-bar-code/index",
+    "views/webview/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  }
+}

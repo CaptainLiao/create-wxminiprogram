@@ -1,0 +1,21 @@
+.tab-nav {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+
+  padding-top: 8rpx;
+  width: 100%;
+
+  background: #fcfcfc;
+}
+
+.tab-icon {
+  width: 60rpx;
+  height: 60rpx;
+  margin: 0 auto 8rpx auto;
+}
+
+.active {
+  color: #227a53
+}

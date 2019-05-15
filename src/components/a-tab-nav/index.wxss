@@ -1,0 +1,20 @@
+.tab-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+
+  line-height: 96rpx;
+  background: #fcfcfc;
+}
+
+.tab-nav-line {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  height: 1px;
+  background: var(--green);
+  transition: left 0.3s ease;
+}

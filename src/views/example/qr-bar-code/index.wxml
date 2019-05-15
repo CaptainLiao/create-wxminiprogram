@@ -1,0 +1,10 @@
+<import src="../../_template/qr-bar-code/index.wxml" />
+
+<view>
+  <text>views/example/qr-bar-code/index.wxml</text>
+  <button bindtap="tapShowQrcode">点击显示二维码</button>
+
+  <template is="qr-bar-code" data="{{showQrcode, qrcodeWidth}}"></template>
+</view>
+
+

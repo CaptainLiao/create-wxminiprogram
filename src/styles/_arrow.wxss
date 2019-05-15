@@ -1,0 +1,22 @@
+page {
+  --arrow-color: #000;
+  --arrow-width: 12rpx;
+}
+
+.a-arrow {
+  margin-top: -4rpx;
+  width: var(--arrow-width);
+  height: var(--arrow-width);
+  border-top: 1px solid var(--arrow-color);
+  border-right: 1px solid var(--arrow-color);
+  transition: transform .2s ease;
+}
+.a-arrow.up {
+  transform: translateY(50%) rotate(-45deg);
+}
+.a-arrow.down {
+  transform: rotate(135deg);
+}
+.a-arrow.right {
+  transform: rotate(45deg);
+}

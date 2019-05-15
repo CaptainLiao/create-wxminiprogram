@@ -1,0 +1,4 @@
+<view>
+  <text>views/example/upload/index.wxml</text>
+  <button bindtap="tapUpload">上传文件</button>
+</view>

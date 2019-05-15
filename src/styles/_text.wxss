@@ -1,0 +1,111 @@
+page {
+  /* inspired by: https://www.zhihu.com/question/37593717 */
+  font-family: -apple-system, BlinkMacSystemFont, "PingFang SC", "PingFangSC",
+    "Roboto", "Hiragino Sans GB", "Helvetica Neue", "STHeiti",
+    "Microsoft YaHei", "Microsoft JhengHei", "Source Han Sans SC",
+    "Noto Sans CJK SC", "Source Han Sans CN", "Noto Sans SC",
+    "Source Han Sans TC", "Noto Sans CJK TC", "WenQuanYi Micro Hei", SimSun,
+    sans-serif;
+}
+
+.text-digit {
+  font-family: "Avenir-Medium", Avenir, -apple-system, BlinkMacSystemFont,
+    "PingFang SC", "PingFangSC", "Roboto", "Hiragino Sans GB", "Helvetica Neue",
+    "STHeiti", "Microsoft YaHei", "Microsoft JhengHei",
+    "Source Han Sans SC", "Noto Sans CJK SC", "Source Han Sans CN",
+    "Noto Sans SC", "Source Han Sans TC", "Noto Sans CJK TC",
+    "WenQuanYi Micro Hei", SimSun, sans-serif;
+}
+
+.text-ultralight {
+  font-weight: 100;
+}
+.text-light {
+  font-weight: 300;
+}
+
+.text-thin {
+  font-weight: 200;
+}
+.text-regular {
+  font-weight: 400;
+}
+.text-medium {
+  font-weight: 500;
+}
+.text-bold {
+  font-weight: 500;
+}
+.text-semibold {
+  font-weight: 800;
+}
+
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+
+.text-16 {
+  font-size: 16rpx;
+}
+.text-18 {
+  font-size: 18rpx;
+}
+.text-20 {
+  font-size: 20rpx;
+}
+.text-22 {
+  font-size: 22rpx;
+}
+.text-24 {
+  font-size: 24rpx;
+}
+.text-26 {
+  font-size: 26rpx;
+}
+.text-28 {
+  font-size: 28rpx;
+}
+.text-30 {
+  font-size: 30rpx;
+}
+.text-32 {
+  font-size: 32rpx;
+}
+.text-34 {
+  font-size: 34rpx;
+}
+.text-36 {
+  font-size: 36rpx;
+}
+.text-38 {
+  font-size: 38rpx;
+}
+.text-40 {
+  font-size: 40rpx;
+}
+.text-44 {
+  font-size: 44rpx;
+}
+.text-47 {
+  font-size: 47rpx;
+}
+.text-48 {
+  font-size: 48rpx;
+}
+.text-56 {
+  font-size: 56rpx;
+}
+.text-60 {
+  font-size: 60rpx;
+}
+.text-ellipsis {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

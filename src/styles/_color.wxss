@@ -1,0 +1,52 @@
+.gray {
+  color: var(--gray);
+}
+.light-gray {
+  color: var(--lightgray);
+}
+.dark-gray {
+  color: var(--darkgray);
+}
+
+.black {
+  color: var(--black);
+}
+
+.red {
+  color: var(--red);
+}
+
+.orange {
+  color: var(--orange);
+}
+
+.green {
+  color: var(--green);
+}
+.dark-green {
+  color: var(--darkgreen);
+}
+
+.white {
+  color: #ffffff;
+}
+
+.blue {
+  color: var(--blue);
+}
+.light-blue {
+  color: #5cadff;
+}
+.dark-blue {
+  color: #2b85e4;
+}
+
+.bg-white {
+  background-color: #ffffff;
+}
+.bg-gray {
+  background-color: #f8f8f9;
+}
+.bg-blue {
+  background-color: #2d8cf0;
+}

@@ -1,0 +1,16 @@
+<template name="qr-bar-code">
+  <view class="a-modal" hidden="{{!showQrcode}}" bindtap='tapCloseQrcode' catchtouchmove>
+    <view class="a-modal-content">
+      <view class="a-modal-title fx-row fx-m-between">
+      </view>
+      <canvas class="barcode" canvas-id='barcode'></canvas>
+
+      <canvas class="qrcode-canvas" 
+        canvas-id="qrcode"
+        style="width: {{qrcodeWidth}}px; height: {{qrcodeWidth}}px;">
+      </canvas>
+
+      <view class="a-modal-foot text-center text-28 black">扫码使用优惠券</view>
+    </view>
+  </view>
+</template>

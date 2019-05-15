@@ -1,0 +1,183 @@
+/**
+ * Flex布局小助手
+ *
+ * Resource:
+ * 1. https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+ * 2. https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Flexible_Box_Layout/Using_CSS_flexible_boxes
+ **/
+
+
+/**
+ * 1.在容器上声明的属性
+ */
+
+ .fx-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.fx-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.fx-wrap {
+  flex-wrap: wrap;
+}
+
+.fx-nowrap {
+  flex-wrap: nowrap;
+}
+
+.fx-m-start {
+  justify-content: flex-start;
+}
+
+.fx-m-center {
+  justify-content: center;
+}
+
+.fx-m-end {
+  justify-content: flex-end;
+}
+
+.fx-m-between {
+  justify-content: space-between;
+}
+
+.fx-m-around {
+  justify-content: space-around;
+}
+
+.fx-c-stretch {
+  align-items: stretch;
+}
+
+.fx-c-start {
+  align-items: flex-start;
+}
+
+.fx-c-center {
+  align-items: center;
+}
+
+.fx-c-end {
+  align-items: flex-end;
+}
+
+.fx-c-baseline {
+  align-items: baseline;
+}
+
+.fx-cl-stretch {
+  align-content: stretch;
+}
+
+.fx-cl-start {
+  align-content: flex-start;
+}
+
+.fx-cl-center {
+  align-content: center;
+}
+
+.fx-cl-end {
+  align-content: flex-end;
+}
+
+.fx-cl-between {
+  align-content: space-between;
+}
+
+.fx-cl-around {
+  align-content: space-around;
+}
+
+
+/**
+ * 2. 在子元素上声明的属性
+ */
+
+.fx-0 {
+  flex-basis: 0;
+  flex-grow: 0;
+}
+
+.fx-1 {
+  flex-basis: 0;
+  flex-grow: 1;
+}
+
+.fx-2 {
+  flex-basis: 0;
+  flex-grow: 2;
+}
+
+.fx-3 {
+  flex-basis: 0;
+  flex-grow: 3;
+}
+
+.fx-4 {
+  flex-basis: 0;
+  flex-grow: 4;
+}
+
+.fx-5 {
+  flex-basis: 0;
+  flex-grow: 5;
+}
+
+.fx-6 {
+  flex-basis: 0;
+  flex-grow: 6;
+}
+
+.fx-grow {
+  flex-grow: 1;
+}
+
+.fx-s-stretch {
+  align-self: stretch;
+}
+
+.fx-s-start {
+  align-self: flex-start;
+}
+
+.fx-s-center {
+  align-self: center;
+}
+
+.fx-s-end {
+  align-self: flex-end;
+}
+
+.fx-s-baseline {
+  align-self: baseline;
+}
+
+
+/**
+ * 3. 经常使用的快捷方式
+ * (谨慎添加哦)
+ */
+
+.fx-v-center {
+  display: flex;
+
+  align-items: center;
+}
+
+.fx-h-center {
+  display: flex;
+
+  justify-content: center;
+}
+
+.fx-center {
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}

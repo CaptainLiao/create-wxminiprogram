@@ -1,0 +1,11 @@
+<view class="tab-nav fx-row fx-m-between text-center">
+  <view wx:for="{{tabNav}}" 
+    wx:key="{{item.value}}"
+    class="tab-nav-item {{currentIndex === index ? 'green' : ''}}"
+    style="{{tabStyle.item}}"
+    data-index="{{index}}"
+    bindtap="tapTabNav">{{item.name}}
+  </view>
+
+  <view class="tab-nav-line" style="{{tabStyle.line}}"></view>
+</view>
