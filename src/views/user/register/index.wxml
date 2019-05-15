@@ -1,0 +1,36 @@
+<view class="register">
+  <button id="getUserInfo" open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="tapGotUserInfo"></button>
+
+  <image class="banner" src="./banner.png"></image>
+
+  <view class="register-phone fx-row fx-v-center">
+    <text>+86</text>
+    <text class="a-arrow right"></text>
+    <input
+      type="number"
+      data-key="phone" 
+      value="{{ phone }}" 
+      bindinput="onPhoneNum" 
+      placeholder="请输入手机号" />
+  </view>
+
+
+  <view class="code-area">
+    <input class="register-code"
+      type="text" 
+      data-key="phoneCode" 
+      value="{{ phoneCode }}"
+      bindinput="onPhoneCode" 
+      bindconfirm="tapSubmitKeyboard" 
+      placeholder="请输入验证码" />
+    <view class="code-text text-26" 
+      catchtap="{{ seconds === 0 ? 'tapGetPhoneCode' : '' }}">
+      <span>{{seconds === 0 ? '发送验证码' : seconds + 's后重发'}}</span>
+    </view>
+  </view>
+
+  <label for="getUserInfo">
+    <view class="register-button text-center">登录</view>
+  </label>
+  <view class="tips text-center">以便我们为您提供更好的服务</view>
+</view>

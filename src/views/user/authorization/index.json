@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "用户授权",
+  "usingComponents": {
+    "a-title": "/pages/components/a-title/index",
+    "a-tab-bar": "/pages/components/a-tab-bar/index"
+  }
+}

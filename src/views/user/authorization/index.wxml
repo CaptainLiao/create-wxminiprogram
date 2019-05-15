@@ -1,0 +1,33 @@
+<!--pages/authorization/index.wxml-->
+
+<view class="page-auth text-32">
+  <template is="btnForGetPhoneNumber" data="{{showGetPhoneNumberButton}}"></template>
+
+  <image class="logo" src="../../../images/logo.png"></image>
+
+  <a-title>请同意授权登录</a-title>
+
+  <button class="auth-btn"
+    open-type="getUserInfo" 
+    lang="zh_CN" 
+    bindgetuserinfo="onGotUserInfo">
+    确认授权
+  </button>
+
+  <view class="tips text-center">以便我们为您提供更好的服务</view>
+</view>
+
+<template name="btnForGetPhoneNumber">
+  <button id="getPhoneNumber" 
+    class="hidden" 
+    open-type="getPhoneNumber" 
+    bindgetphonenumber="tapGetPhoneNumber"></button>
+    
+  <view class="a-modal text-center text-26" wx:if="{{showGetPhoneNumberButton}}">
+    <label for="getPhoneNumber" class="a-modal-content">
+      <view>为了您的账号安全，请绑定手机号码</view>
+      <view class="a-modal-button">立即绑定手机号</view>
+    </label>
+  </view>
+</template>
+

@@ -33,9 +33,7 @@ export default {
     let data = 	{
       phone,
       appid: CONFIG.appId,
-      brandId: CONFIG.brandId,
-      chanel: CONFIG.chanel,
-      maOpenId: wx.getStorageSync('openId'),
+      openId: wx.getStorageSync('openId'),
      }
     return request({
       method: 'POST',
@@ -48,9 +46,7 @@ export default {
       phone,
       phoneCode,
       appid: CONFIG.appId,
-      brandId: CONFIG.brandId,
-      chanel: CONFIG.chanel,
-      maOpenId: wx.getStorageSync('openId'),
+      openId: wx.getStorageSync('openId'),
       unionId: wx.getStorageSync('unionId'),
      }
     return request({

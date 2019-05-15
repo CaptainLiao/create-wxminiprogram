@@ -50,7 +50,7 @@ export default {
       .catch(e => {
         if (e.code == HTTP_STATUS.unRegister) {
           wx.setStorageSync('unionId', get(e,'message.unionId'))
-          wx.setStorageSync('maOpenId', get(e,'message.maOpenId'))
+          wx.setStorageSync('openId', get(e,'message.maOpenId'))
   
           return new Promise((resolve, reject) => {
             return getApp().router.push({

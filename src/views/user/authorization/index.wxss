@@ -1,0 +1,45 @@
+page {
+  background: #fff;
+}
+
+.page-auth {
+  padding-top: 120rpx;
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 140rpx auto;
+  width: 160rpx;
+  height: 160rpx;
+}
+
+.auth-btn {
+  display: block;
+  margin: 70rpx 60rpx 26rpx 60rpx;
+
+  line-height: 80rpx;
+  border-radius: 80rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: var(--green);
+}
+.tips {
+  color: #dbe486;
+}
+
+
+.a-modal-content {
+  padding: 60rpx 0 40rpx 0;
+  width: 90%;
+
+  border-radius: 12rpx;
+  background: #fff;
+}
+.a-modal-button {
+  margin: 24rpx auto 0 auto;
+  width: 80%;
+  line-height: 68rpx;
+  border-radius: 8rpx;
+  color: #fff;
+  background: var(--green);
+}
