@@ -1,0 +1,6 @@
+<view
+      bindlongpress="tapRecordStart"
+      bindtouchcancel="tapRecordEnd"
+      bindtouchend="tapRecordEnd">
+  <slot></slot>
+</view>

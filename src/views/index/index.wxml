@@ -1,1 +1,5 @@
-<web-view src="https://member.kengee.com.cn/webkg/?brand=KG"></web-view>
+<view>
+  <a-record bindrecordend="onRecordEnd">
+    <text>a</text>
+  </a-record>
+</view>

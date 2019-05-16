@@ -13,7 +13,7 @@
 	},
 	"compileType": "miniprogram",
 	"libVersion": "2.6.1",
-	"appid": "",
+	"appid": "wx5a5ac39d0cc13dac",
 	"projectname": "wxapp-boiler",
 	"debugOptions": {
 		"hidedInDevtools": []
