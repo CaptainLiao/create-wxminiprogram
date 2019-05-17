@@ -93,19 +93,18 @@ Page({
         let code = get(data, 'code')
         let token = get(data, 'token')
     
-        if (token) return {token}
+        if (token) {
+          __register__token = token
+          return APP.showToast({ title: '登录成功' })
+        }
     
         throw {code, message: get(data, 'member', get(data, 'msg'))}
-      })
-      .then(({token}) => {
-        __register__token = token
-        return APP.showToast({ title: '登录成功' })
       })
       .then(() => APP.router.back())
       .catch(e => {
         if (e.code == '901') {
           wx.setStorageSync('unionId', get(e,'message.unionId'))
-          wx.setStorageSync('maOpenId', get(e,'message.maOpenId'))
+          wx.setStorageSync('openId', get(e,'message.maOpenId'))
           wx.setStorageSync('avatarUrl', get(e,'message.avatarUrl'))
   
           return this.setData({

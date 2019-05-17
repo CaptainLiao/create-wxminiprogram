@@ -1,4 +1,7 @@
-import auth from './auth-login'
+import {
+  getToken,
+  login,
+} from './auth-login'
 import {HTTP_STATUS} from '../config'
 
 const OND_DAY = 24 * 3600 * 1000
@@ -10,10 +13,7 @@ let __tokenExpiredTime = wx.getStorageSync(TET)
 export default {
   get,
   refresh,
-  ensure,
-
-  login,
-  loginWithUserInfo
+  ensure
 }
 
 function get() {
@@ -25,33 +25,20 @@ function get() {
 }
 
 function refresh() {
-  __tokenPromise = auth.getToken()
-    .then(tokenRes => {
-      __setTokenExpiredTime()
-      return tokenRes
-    })
-
-  return __tokenPromise
+  return __tokenPromise = getToken().then(tokenRes => {
+    __setTokenExpiredTime()
+    return tokenRes
+  })
 }
 
 function ensure() {
   return get().catch(e => {
-    if (e && e.code == HTTP_STATUS.unlogin) 
-      return login()
+    if (e && e.code == HTTP_STATUS.unlogin) {
+      return __tokenPromise = login()
+    }
 
     throw e
   })
-}
-
-
-function login() {
-  __tokenPromise = null
-  return auth.login()
-}
-
-function loginWithUserInfo(userInfo) {
-  __tokenPromise = null
-  return auth.loginWithUserInfo(userInfo)
 }
 
 
