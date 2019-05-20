@@ -34,7 +34,10 @@ function refresh() {
 function ensure() {
   return get().catch(e => {
     if (e && e.code == HTTP_STATUS.unlogin) {
-      return __tokenPromise = login()
+      return __tokenPromise = login().then(tokenRes => {
+        __setTokenExpiredTime()
+        return tokenRes
+      })
     }
 
     throw e
